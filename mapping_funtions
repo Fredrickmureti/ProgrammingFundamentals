@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+#mapping functions -> a mapping function is a type of a function that takes an iterable(such as a list, tuple or 
+# a dictionary) and applies a funtion to each item in the iterable returning a new iterable with results
+
+#mapp() function is a built in funtion that takes two argument, a function and an iterable and returns an iterator
+#that applies the function to each element of the iterable
+
+#define a function to double a number
+
+def double_number(x):
+    return x * 2
+
+
+#apply the function to a list using the mapp() function
+numbers = [2, 3, 4, 5]
+doubled_numbers = mapp(double_number, numbers) #doubled_numbers is the iterator formed
+
+#convert the iterator to a list and print out the results
+
+print(list(doubled_numbers))
+
+#Example 2
+#dict() function which takes an iterable of key, value pairs(list of tuples) and returns a dictionary
+
+#create  list of tuples representing key value pairs
+items = [('apple', 2), ('mangoes', 3), ('banana', 5)]
+
+#convert the list into a dictionary
+item_dict = dict(items)
+
+#print the resulting dictionary
+print(item_dict)
