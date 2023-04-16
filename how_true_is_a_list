@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+#in python you can use the (all()) function to check if all elements in the list are true, 
+#The 'all()' functions returns True if all elements in the list are True and False otherwise
+
+#Example1
+my_list = [True, True, True]
+print(all(my_list)) #output True
+
+#Example 2
+my_list1 = [True, False, True]
+print(all(my_list1)) #outputs False
+
+#Example 3
+my_list2 = [1, 2, 3, 4]
+print(all(my_list2)) #outputs True since all values in the list are greater than 0 which evaluates to True
+
+

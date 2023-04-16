@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+
+#(isinstance()) is a built in function in python that allows you to check whether an object belongs to a 
+#particular class or not
+#The syntax for isinstance() is as follows
+
+# isinstance(object, classinfo) where object = is the object you want to check and 
+#classinfo = can either be a class or a tuple of classes
+#if the object is an instance of these classes or subclass of any of this classes, the function returns True, 
+#otherwise it returns False
+
+#Example1
+
+
+class Myclass:
+    pass
+
+
+obj = Myclass
+print(isinstance(obj, Myclass)) #output True
+
+
+#Example 2
+
+class Animal:
+    pass
+
+
+class Dog(Animal):
+    pass
+
+my_dog = Dog()
+print(isinstance(my_dog, Animal))  #outputs True
+
+
+#Example 3
+
+class Myclass:
+    pass
+
+class MyOtherClass:
+    pass
+
+obj = MyClass()
+print(isinstance(obj, (MyClass, MyOtherClass)))  #outputs True in this case the isinstance takes two arguments,
+#that is the object amd the tuple of classes
+
