@@ -77,13 +77,13 @@ class RecursiveFunction:
 		print("Recursive function object destroyed")
 
 # Create an object of the class
-obj = RecursiveFunction(5)
+objec = RecursiveFunction(5)
 
 # Call the recursive function
-obj.run()
+objec.run()
 
 # Destroy the object
-del obj
+del objec
 
 
 
